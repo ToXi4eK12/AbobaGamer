@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="menu" id="menu">
+            <img src="img/uganda.png" class="toggle">
+            <ul>
+                <li style="--i:1.1"><a href="#"></a>Server Rules</li>
+                <li style="--i:1.2"><a href="#"></a>Tournaments</li>
+                <li style="--i:1.3"><a href="#"></a>Members</li>
+                <li style="--i:1.4"><a href="#"></a>About</li>
+                <li style="--i:1.5"><a href="#"></a>Bots</li>
+            </ul>
+        </nav>
+        <div class="squer" id="squer"></div>
+        <article>
+            <p class="start">Aboba Gamer<br>сервер друзей <br>и Миши</p>
+        </article>
+        <div class="systemcontainer">
+            <p class="upsys">У нас есть система прокачки при помощи которой вы можете получить множество различных ролей</p>
+            <img src="img/upsystem.png" class="layer1">
+            <img src="img/upsystem.png" class="layer2">
+            <img src="img/upsystem.png" class="layer3">
+        </div>
+        <div class="wechatcontainer">
+            <p class="chat">Присутсвует активный чат,где каждый день новые сообщения и споры</p>
+           <div class="widgetchat">
+                <ul>
+                    <li style="--p:0.1">
+                        <p class="purple">Nezoxness</p>
+                        <p class="massge">Привет</p>
+                    </li>
+                    <li style="--p:0.2">
+                        <p class="moder">Kot</p>
+                        <p class="massge">Привет</p>
+                    </li>
+                    <li style="--p:0.3">
+                        <p class="purple">Nezoxness</p>
+                        <p class="massge">Нормас вчера поиграли</p>
+                    </li>
+                    <li style="--p:0.4">
+                        <p class="admin">Memas</p>
+                        <p class="massge">Я гей</p>
+                    </li>
+                    <li style="--p:0.5">
+                        <p class="purple">Nezoxness</p>
+                        <p class="massge">Уверен в этом</p>
+                    </li>
+                    <li style="--p:0.6">
+                        <p class="moder">Kot</p>
+                        <p class="massge">Мы знаем</p>
+                    </li>
+                    <li style="--p:0.7">
+                        <p class="admin">ToXi4eK14</p>
+                        <p class="massge">Я тоже</p>
+                    </li>
+                </ul>
+           </div>
+        </div>
+        <script>
+            let toggle = document.querySelector(".toggle");
+            let menu = document.querySelector('.menu')
+            toggle.onclick = function(){
+                 menu.classList.toggle('active')
+                }               
+        </script>
+        <script>
+            let object = document.getElementById('squer');
+            window.addEventListener('scroll', function () {
+                const scrollPosition = window.scrollY;
+                if(scrollPosition > 200){
+                document.getElementById('squer').style.borderRadius = '0px';
+                 }
+                else document.getElementById('squer').style.borderRadius = '0px 0px 100% 100%';
+                });
+        </script>
+        <script>
+            let systemcontainer = document.querySelector(".systemcontainer");
+            console.log(systemcontainer);
+            window.addEventListener('scroll', function () {
+                const scrollPos = window.scrollY;
+                if(scrollPos > 600){
+                    console.log(222);
+                    systemcontainer.classList.add('active');
+                    console.log(222);
+                }
+                else systemcontainer.classList.remove('active');
+            });         
+        </script>
+    </body>
+</html>
